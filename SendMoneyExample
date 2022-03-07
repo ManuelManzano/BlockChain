@@ -1,0 +1,14 @@
+/*
+Simple Solidity example on Remix to send and receive money.
+*/
+pragma solidity ^0.5.13;
+
+contract SendMoneyExample {
+    function receiveMoney() public payable {
+
+    }
+
+    function getBalance() public view returns(uint) {
+        return address(this).balance;
+    }
+}
